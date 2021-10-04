@@ -1,0 +1,336 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    background-color: rgb(240 240 240);
+}
+
+
+
+header{
+    background-color: #687785;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+       background-color: #687785;
+}
+
+
+.logo{
+     margin: 20px;
+}
+
+
+
+.nav {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+
+
+
+}
+
+.topnav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   margin-left: 0%;
+   margin-top: 40px;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+
+
+.top{
+    display: flex;
+    justify-content:center;
+    
+}
+
+div h2 {
+    text-align: center;
+}
+
+.img1 {
+    width: 200px;
+    height: 200px;
+
+}
+
+.topImgHeader {
+    position: relative;
+    text-align: center;
+    
+}
+
+.topImgHeader h1 {
+
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: fit-content;
+}
+
+.cards{
+    display: flex;
+  
+    align-items: stretch;
+    justify-content: space-between;
+
+}
+
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(189, 189, 189);
+    flex: 1 1 30%;
+    padding: 60px;
+    margin: 40px;
+    margin-left: 50px;
+    color: white;
+       
+}
+
+
+
+.cards img {
+    width: 100px;
+    height: 100px;
+   }
+
+
+
+   .btn{
+    display: flex;
+    justify-content:center;
+   
+  
+
+   }
+   button {
+    background-color:rgb(134, 133, 133);
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    
+   }
+
+
+   .bottom{
+    width: fit-content;
+       margin: 100px;
+   }
+   .open_img{
+    display: flex;
+    justify-content:start;
+ 
+   }
+
+   
+.open_img .selected{
+    align-self: center;
+    margin-left: 20px;
+}
+ 
+.days {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.day {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 18px;
+    margin:20px;
+}
+
+
+footer{
+    background-color: #687785;
+    margin-top: 20px;
+}
+
+
+.container_footer {
+    display: flex;
+     gap: 35%; 
+}   
+
+.logo img {
+    padding: 5px;
+}
+
+ul li {
+    list-style: none;
+   
+}
+
+.content p{
+    margin:20px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 992px) {
+    
+
+
+
+    .cards{
+        display: flex;
+        flex-direction: column;      
+        align-items: stretch;
+        justify-content: space-between;
+      
+    }
+    .bottom{
+        width: fit-content;
+         
+       }
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    body {
+      
+      max-width: 600px;
+    }
+    
+    
+
+    section {
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 150%;
+
+    }
+     .bottom{
+       display: flex;
+       flex-direction: column;
+       margin: 10px;
+         
+       } 
+
+  
+    
+    header{
+        width: 200%;
+    }
+             
+       
+   .container_footer {
+       display: flex;
+        gap: 5%;
+   }   
+   
+   footer {
+       
+       width: 200%;
+   }
+  }
+
+
+
+
+  
+
+
+.logo{
+    float:left;
+    padding: 25px 10px;
+   
+}
+
+
+
+.content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ul {
+    
+    list-style: none;
+    display: flex
+
+}
+
+li {
+    align-items: center;
+    padding: 2px;
+    margin: 2px;
+}
+nav {
+    align-items: center;
+}
+
+.content li{
+    margin : 0 10px;
+}
+
+
+
+@media screen and (max-width: 300px) {
+    body {
+    
+      max-width: 600px;
+    }
+
+    
+
+    section {
+        margin-left: 32%;
+        margin-right: 20%;
+        width: 150%;
+
+    }
+   header {
+       width:200% ;
+   }
+
+   .container1 {
+       width: 110%;
+   }
+
+  footer {
+
+       width: 200%;
+    }
+    .topImgHeader h1 {
+       
+        width: fit-content;
+        font-size: inherit;
+    }
+
+}
